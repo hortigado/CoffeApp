@@ -67,6 +67,8 @@ class ListCoffe extends StatelessWidget {
                                 itemCount: _.list.length,
                                 itemWidth: width * 0.9,
                                 itemHeight: height * 0.6,
+                                containerHeight: height * 0.6,
+                                containerWidth: width * 0.9,
                                 layout: SwiperLayout.STACK,
                                 scrollDirection: Axis.vertical,
                               ),
