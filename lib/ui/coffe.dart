@@ -1,7 +1,6 @@
 import 'package:coffeapp/controller/CoffesController.dart';
 import 'package:coffeapp/ui/widgets/appbar.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class Coffe extends StatelessWidget {
   final CoffesController controller;

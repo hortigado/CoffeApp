@@ -49,7 +49,7 @@ class ListCoffe extends StatelessWidget {
                                     child: Container(
                                       width: width,
                                       height: height * 4,
-                                      child: InkWell(
+                                      child: GestureDetector(
                                         onTap: () {
                                           Get.to(Coffe(
                                             controller: _,
