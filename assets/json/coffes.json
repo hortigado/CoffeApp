@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Caramel Macchiato",
+    "price": 25,
+    "img": "assets/images/1.png"
+  },
+  {
+    "title": "Caramel Cold Drink",
+    "price": 20,
+    "img": "assets/images/2.png"
+  },
+  {
+    "title": "Iced Coffe Mocha",
+    "price": 21,
+    "img": "assets/images/3.png"
+  },
+  {
+    "title": "Caramelized Pecan Latte",
+    "price": 15,
+    "img": "assets/images/4.png"
+  },
+  {
+    "title": "Toffee Nut Latte",
+    "price": 35,
+    "img": "assets/images/5.png"
+  },
+  {
+    "title": "Capuchino",
+    "price": 2,
+    "img": "assets/images/6.png"
+  },
+  {
+    "title": "Toffee Nut Iced Latte",
+    "price": 25,
+    "img": "assets/images/7.png"
+  },
+  {
+    "title": "Americano",
+    "price": 25,
+    "img": "assets/images/8.png"
+  },
+  {
+    "title": "Vietnamese-Style Iced Coffee",
+    "price": 25,
+    "img": "assets/images/9.png"
+  },
+  {
+    "title": " Black Tea Latte",
+    "price": 17,
+    "img": "assets/images/10.png"
+  },
+
+  {
+    "title": " Classic Irish Coffee",
+    "price": 12,
+    "img": "assets/images/11.png"
+  },
+
+  {
+    "title": "Toffee Nut Crunch Latte",
+    "price": 11,
+    "img": "assets/images/12.png"
+  }
+]
