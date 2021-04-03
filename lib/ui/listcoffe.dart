@@ -28,6 +28,8 @@ class ListCoffe extends StatelessWidget {
                   return Obx(() {
                     if (_.index.value != 0) {
                       swiperController.move(_.index.value, animation: true);
+                    } else if (_.index.value == 0) {
+                      _.hide.value = false;
                     }
                     return AnimatedContainer(
                         duration: Duration(seconds: 1),
@@ -73,21 +75,27 @@ class ListCoffe extends StatelessWidget {
                                 scrollDirection: Axis.vertical,
                               ),
                               AnimatedOpacity(
-                                duration: Duration(milliseconds: 600),
+                                onEnd: () {
+                                  _.hide.value = true;
+                                },
+                                duration: Duration(milliseconds: 400),
                                 opacity: _.index.value == 0 ? 1.0 : 0.0,
-                                child: Center(
-                                  child: Padding(
-                                    padding: EdgeInsets.only(top: height * .08),
-                                    child: Text(
-                                      "Coffe \n Hortigado",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                          fontSize: height * .06,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                  ),
-                                ),
+                                child: !_.hide.value
+                                    ? Center(
+                                        child: Padding(
+                                          padding: EdgeInsets.only(
+                                              top: height * .08),
+                                          child: Text(
+                                            "Coffe \n Hortigado",
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(
+                                                fontSize: height * .06,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ),
+                                      )
+                                    : Container(),
                               ),
                               AnimatedPositioned(
                                 top: _.index.value == 0 ? -height * .11 : 0,

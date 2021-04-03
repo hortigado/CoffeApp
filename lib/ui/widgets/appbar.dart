@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget({
@@ -15,7 +16,11 @@ class AppBarWidget extends StatelessWidget {
       child: Container(
         width: width,
         child: AppBar(
-          leading: Icon(Icons.arrow_back),
+          leading: InkWell(
+              onTap: () {
+                Get.back();
+              },
+              child: Icon(Icons.arrow_back)),
           actions: [
             Padding(
               padding: EdgeInsets.only(right: width * .04),

@@ -41,13 +41,6 @@ class Coffe extends StatelessWidget {
                     padding: EdgeInsets.only(top: height * .06),
                     child: Stack(
                       children: [
-                        Positioned(
-                            right: width * .05,
-                            top: height * 0,
-                            child: Icon(
-                              Icons.add_circle_outline_rounded,
-                              size: height * .07,
-                            )),
                         Center(
                           child: Container(
                               height: height * .5,
@@ -56,6 +49,13 @@ class Coffe extends StatelessWidget {
                                   child:
                                       Image.asset(controller.list[index].img))),
                         ),
+                        Positioned(
+                            right: width * .05,
+                            top: height * 0,
+                            child: Icon(
+                              Icons.add_circle_outline_rounded,
+                              size: height * .07,
+                            )),
                         Positioned(
                             left: width * .07,
                             bottom: 0,

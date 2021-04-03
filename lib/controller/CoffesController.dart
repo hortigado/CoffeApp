@@ -7,6 +7,7 @@ class CoffesController extends GetxController {
   List<CoffeModel> get coffe => list;
   final index = 0.obs;
   final front = 0.obs;
+  RxBool hide = false.obs;
   @override
   void onInit() async {
     list = await Database().getCoffes();
