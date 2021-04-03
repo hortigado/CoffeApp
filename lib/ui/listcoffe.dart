@@ -46,21 +46,22 @@ class ListCoffe extends StatelessWidget {
                                 itemBuilder: (BuildContext context, int index) {
                                   return Padding(
                                     padding: EdgeInsets.only(top: height * .1),
-                                    child: GestureDetector(
+                                    child: Container(
+                                      width: width,
+                                      height: height * 4,
+                                      child: InkWell(
                                         onTap: () {
                                           Get.to(Coffe(
                                             controller: _,
                                             index: index,
                                           ));
                                         },
-                                        child: Container(
-                                          width: width * 0.9,
-                                          height: height * 0.6,
-                                          child: Hero(
-                                              tag: index,
-                                              child: Image.asset(
-                                                  _.list[index].img)),
-                                        )),
+                                        child: Hero(
+                                            tag: index,
+                                            child:
+                                                Image.asset(_.list[index].img)),
+                                      ),
+                                    ),
                                   );
                                 },
                                 itemCount: _.list.length,
